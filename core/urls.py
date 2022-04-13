@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from blogs.views import index
+from blogs.views import name
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blogs', index),
+    path('name', name),
 ]
