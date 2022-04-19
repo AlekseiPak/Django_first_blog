@@ -24,3 +24,8 @@ def user(request):
     }
     
     return render(request, 'blogs/user.html', context)
+
+def hobby(request):
+   
+    
+    return render(request, 'blogs/hobby.html')

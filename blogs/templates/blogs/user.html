@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Моё имя!!!</title>
-</head>
-<body>
-	<span>Меня зовут {{user_data.user_name}}, мне {{user_data.user_age}}!</span>
-	
-</body>
-</html>
+{% extends "blogs/_base.html"%}		
+{% block content %}
+	<title>{% block title %} О себе!{%endblock title %}</title>		
+	</div>
+		</div>
+			<div class='row'>
+
+				<span>
+					<strong>
+						Меня зовут {{user_data.user_name}}, мне {{user_data.user_age}}!
+					</strong>
+				</span>
+{% endblock content %}
+			
