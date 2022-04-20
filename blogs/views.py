@@ -14,10 +14,9 @@ def index(request):
 
 def user(request):
     # Как передавать переменные!
-    user_data = {
-            'user_name': 'Алексей',
-            'user_age': 27
-            }
+    user_data =['Алексей, 27 лет.', 'Кыргызстан, г.Кара-Балта', 'Высшее Образование']
+            
+            
     context = {
             'user_data': user_data
 

@@ -1,14 +1,20 @@
 {% extends "blogs/_base.html"%}		
 {% block content %}
+{% load static %}
 	<title>{% block title %} О себе!{%endblock title %}</title>		
 	</div>
 		</div>
 			<div class='row'>
-
-				<span>
-					<strong>
-						Меня зовут {{user_data.user_name}}, мне {{user_data.user_age}}!
-					</strong>
-				</span>
+				<ul>
+					{% for blog in user_data %}
+						<li>
+							<strong>
+								{{blog}}
+							</strong>
+						</li>
+					{% endfor %}
+				</ul>
+			
+				<img src="{% static 'blogs/img/kb.jpg' %}">
 {% endblock content %}
 			
