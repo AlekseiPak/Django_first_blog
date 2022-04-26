@@ -1,77 +1,49 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{% block title %}{%endblock title %}</title>
-	<!-- css import from bootstrap -->
-	<link rel="stylesheet" type="text/css" href="{% static 'blogs/css/bootstrap.min.css' %}">
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
-	  <div class="container-fluid">
-	  <a class="navbar-brand" href="#">
-	  		<img width = "35" src="{% static 'blogs/img/logo.svg' %}"alt="">
-	  		IT-ACADEMY
-	  </a>
-	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="{% url 'blogs_index' %}">БЛОГИ</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link active" href="{% url 'user_views'%}">О СЕБЕ!</a>
-	        </li>
-	      <!--   <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Dropdown
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#">Action</a></li>
-	            <li><a class="dropdown-item" href="#">Another action</a></li>
-	            <li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="#">Something else here</a></li>
-	          </ul>
-	        </li> -->
-	        <li class="nav-item">
-	          <a class="nav-link active" href="{% url 'hobby_html' %}">ХОББИ</a>
-	        </li>
-	      </ul>
-	      <form class="d-flex">
-	        <input class="form-control me-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
-	        <button class="btn btn-light" type="submit">Поиск</button>
-	      </form>
-	    </div>
-	  </div>
-	</nav>
-	<div class="container">
-		
-
-			<!-- <--ОСНОВНОЙ content-->
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% block title %}{%endblock title %}</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'blogs/css/bootstrap.min.css' %}">
+		</head>
+	    <body>
+		<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img width = "35" src="{% static 'blogs/img/logo.svg' %}"alt="">
+	 					IT-ACADEMY
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ 					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'blogs_index' %}">БЛОГИ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="{% url 'user_views'%}">О СЕБЕ!</a>
+						</li>
+							<li class="nav-item">
+							<a class="nav-link active" href="{% url 'apple_store'%}">APPLE STORE</a>
+						</li>
+							<li class="nav-item">
+							<a class="nav-link active" href="{% url 'production_catalog' %}">NIKE Shop</a>
+							</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
+						<button class="btn btn-light" type="submit">Поиск</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
 			{% block content %}
 			{% endblock content %}
-
-	
-	</div>
-	<nav aria-label="Page navigation example">
-			  <ul class="pagination justify-content-center">
-			    <li class="page-item"><a class="page-link" href="#">--></a></li>
-			    <li class="page-item"><a class="page-link" href="{% url 'blogs_index' %}">Главная</a></li>
-			    <li class="page-item"><a class="page-link" href="{% url 'user_views'%}">О СЕБЕ</a></li>
-			    <li class="page-item"><a class="page-link" href="{% url 'hobby_html'%}">ХОББИ</a></li>
-			    <li class="page-item"><a class="page-link" href="#"><--</a></li>
-			  </ul>
-			</nav>
-
-	
-	<!-- JavaScript Bundle with Popper -->
-	<script src="{% static 'blogs/js/bootstrap.bundle.min.js' %}"></script>
-
-</body>
+		</div>
+		<script src="{% static 'blogs/js/bootstrap.bundle.min.js' %}"></script>
+	</body>
 </html>
 		

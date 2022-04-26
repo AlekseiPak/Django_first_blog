@@ -24,7 +24,15 @@ def user(request):
     
     return render(request, 'blogs/user.html', context)
 
-def hobby(request):
+def apple(request):
    
     
-    return render(request, 'blogs/hobby.html')
+    return render(request, 'blogs/apple.html')
+
+
+def production(request):
+
+    return render(request, 'blogs/production.html')
+
+def price(request):
+    return render(request, 'blogs/price.html')

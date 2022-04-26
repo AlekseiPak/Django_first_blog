@@ -1,24 +1,24 @@
 {% extends "blogs/_base.html"%}		
 {% block content %}
 <title>{% block title %} Мой первый сайт {%endblock title %}</title>
-			<div class="row">
-				</ul>
-				<h1>Привет Мир!</h1>
-				<ul>
-					{% for blog in blogs %}
-						<li>
-							<strong>
-								{{ blog.name }},
-								{{ blog.autor.name}},
-								{{blog.publication_date}}
-							</strong>
+	<div class="row">
+		</ul>
+			<h1>Привет Мир!</h1>
+			<ul>
+				{% for blog in blogs %}
+					<li>
+						<strong>
+							{{ blog.name }},
+							{{ blog.autor.name}},
+							{{blog.publication_date}}
+						</strong>
 						
-						</li>
+					</li>
 					{% endfor %}
 		
-				</ul>
-			</div>
-		</div>
+			</ul>
+	</div>
+</div>
 
 {% endblock content %}
 
