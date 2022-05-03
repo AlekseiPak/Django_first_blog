@@ -6,44 +6,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{% block title %}{%endblock title %}</title>
 		<link rel="stylesheet" type="text/css" href="{% static 'blogs/css/bootstrap.min.css' %}">
-		</head>
-	    <body>
-		<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<img width = "35" src="{% static 'blogs/img/logo.svg' %}"alt="">
-	 					IT-ACADEMY
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
- 					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="{% url 'blogs_index' %}">БЛОГИ</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="{% url 'user_views'%}">О СЕБЕ!</a>
-						</li>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static 'blogs/css/custom.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'blogs/css/cssfonn.css' %}">
+
+		<!-- <style type="text/css">
+			.shos{
+				margin-left: 50px;	
+			}
+		</style> -->
+	</head>
+		<body>
+			<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark"> 
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img width = "35" src="{% static 'blogs/img/nikesvg.svg' %}"alt="">
+	 						SHOES SHOP "NIKE"
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ 						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-							<a class="nav-link active" href="{% url 'apple_store'%}">APPLE STORE</a>
-						</li>
-							<li class="nav-item">
-							<a class="nav-link active" href="{% url 'production_catalog' %}">NIKE Shop</a>
+								<a class="nav-link active" href="{% url 'user_views'%}">О СЕБЕ!</a>
 							</li>
-					</ul>
-					<form class="d-flex">
-						<input class="form-control me-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
-						<button class="btn btn-light" type="submit">Поиск</button>
-					</form>
+							<li class="nav-item">
+								<a class="nav-link active" href="{% url 'production_catalog' %}">STORE</a>
+							</li>
+						</ul>
+							<form class="d-flex">
+								<input class="form-control me-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
+								<button class="btn btn-light" type="submit">Поиск</button>
+							</form>
+					</div>
+			</nav>
+				<div class="container">
+					{% block content %}
+					{% endblock content %}
 				</div>
-			</div>
-		</nav>
-		<div class="container">
-			{% block content %}
-			{% endblock content %}
-		</div>
-		<script src="{% static 'blogs/js/bootstrap.bundle.min.js' %}"></script>
-	</body>
+			<script src="{% static 'blogs/js/bootstrap.bundle.min.js' %}"></script>
+			<script src="{% static 'blogs/js/custom.js' %}"></script>
+		</body>
 </html>
 		

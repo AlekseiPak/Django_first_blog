@@ -2,19 +2,33 @@
 {% block content %}
 {% load static %}
 <title>{% block title %} О себе!{%endblock title %}</title>		
-	</div>
-		</div>
-			<div class='row'>
-				<ul>
-					{% for blog in user_data %}
-						<li>
-							<strong>
-								{{blog}}
-							</strong>
-						</li>
-					{% endfor %}
-				</ul>
-			
-				<img src="{% static 'blogs/img/kb.jpg' %}">
+<div class='row'>
+	<p>
+		<strong>Фирменный магазин компании "NIKE".</strong>
+		<strong>Работаем по адресу г.Бишкек ул. Кожомбердиева д. 123</strong>
+	</p>
+</div>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  	<div class="carousel-inner">
+    	<div class="carousel-item active">
+      		<img src="{% static 'blogs/img/nikestore.jpg' %}" class="d-block w-100" alt="..."
+      		width="800" height="700">
+    	</div>
+    	<div class="carousel-item">
+      		<img src="{% static 'blogs/img/salon.jpg' %}" class="d-block w-100" alt="..." width="800" height="700">
+    	</div>
+    	<div class="carousel-item">
+      		<img src="{% static 'blogs/img/salon2.jpg' %}" class="d-block w-100" alt="..." width="800" height="700">
+    	</div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
 {% endblock content %}
 			

@@ -1,0 +1,81 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.product-image {
+	height: 250px;
+	object-fit: cover;
+	padding: 5px 2px 10px 2px;
+}
+  .img.product-image {
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+}
+img.product-image:hover {
+  -webkit-transform: rotate(15deg); /* Градусы поворота можно изменить по необходимости */
+          transform: rotate(15deg); /* Градусы поворота можно изменить по необходимости */
+}
+
+.shos{
+  margin-left: 35px;
+  width: 30rem;
+}
+.box{
+  background-image: url(../img/db/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:1020px;
+  width: auto;
+}
+.shoe-icon {
+  margin-right:10px;
+}
+.displ{
+  display: flex;
+  width: 90em;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.carus {
+  width: 45rem;
+  height: 32rem;
+
+}
+.carus img{
+  height: max-content; 
+  max-width:100%;
+}
+
+.carousel-item img{
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+.chars {
+  font-size: 18px;
+
+}
+
+.size{
+  font-size: 24px;
+}
+.price{
+  font-size: 32px;
+}
+
+.name{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.btn-buy{
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.stock{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #6c757d;
+}

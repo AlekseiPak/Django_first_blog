@@ -15,18 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blogs.views import index, user as user_views, apple as apple_store, production as production_catalog, price as price_no
+from blogs.views import index, user as user_views, apple as apple_store, production as production_catalog, \
+production2 as production_buy
 from django.conf import settings
 from django.conf.urls.static import static
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='blogs_index'),
-    path('user', user_views, name='user_views'),
+    path('blogs', index, name='blogs_index'),
+    path('', user_views, name='user_views'),
     path('apple', apple_store, name='apple_store'),
     path('production', production_catalog, name='production_catalog'),
-    path('price', price_no, name='price_no'),
+    path('production2', production_buy, name='production_buy'),
 
 ]
 

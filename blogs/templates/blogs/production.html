@@ -2,152 +2,110 @@
 {% block content %}
 {% load static %}
 <title>{% block title %}NIKE{%endblock title %}</title>
-<h1>Shoes shop "NIKE"</h1>
-	<div class="row row-cols-6 row-cols-md-4 g-2">
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh1.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
-				<div class="card-body">
-					<h5 class="card-title">NIKE TL3-4</h5>
-					<p class="card-text">90 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
+<body class="box">
+	<h1></h1>
+		<div class="row row-cols-6 row-cols-md-3 g-3">
+			<div class="col col-6">
+				<div class="card border-success h-100 mb-3 ">
+					<img src="{% static 'blogs/img/db/1.jpg'%}" class="card-img-top product-image" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					<div class="card-body">
+						<h5 class="card-title"><img class="shoe-icon" src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">NIKE Air Force</h5>
+						<p class="card-text"><strong>150 $</strong></p>
+						<a href="{% url 'apple_store'%}" class="btn btn-primary">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+						  		<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+							</svg>
+							ЗАКАЗАТЬ
+						</a>
 				</div>
 			</div>
 		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh2.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
+		<div class="col col-6">
+			<div class="card border-success h-100 mb-3">
+				<img  src="{% static 'blogs/img/db/2.jpg'%}" class="card-img-top product-image" alt="">
 				<div class="card-body">
-					<h5 class="card-title">NIKE Shox R4</h5>
-					<p class="card-text">92 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
+					<h5 class="card-title"><img class="shoe-icon" src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">NIKE Shox R4</h5>
+					<p class="card-text"><strong>92 $</strong></p>
+					<a href="{% url 'apple_store'%}" class="btn btn-primary">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+						  	<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+						</svg>
+						ЗАКАЗАТЬ
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh3.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
+		<div class="col col-6">
+			<div class="card border-success h-100 mb-3">
+				<img src="{% static 'blogs/img/db/33.jpg'%}" class="card-img-top product-image" alt="">
 				<div class="card-body">
-					<h5 class="card-title">NIKE Air TN XE</h5>
-					<p class="card-text">99 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
+					<h5 class="card-title"><img class="shoe-icon" src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">NIKE Air TN XE</h5>
+					<p class="card-text"><strong>134 $</strong></p>
+					<a href="{% url 'apple_store'%}" class="btn btn-primary">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+						  	<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+						</svg>
+						ЗАКАЗАТЬ
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh4.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
+		<div class="col col-6">
+			<div class="card border-success h-100 mb-3">
+				<img src="{% static 'blogs/img/db/4.jpg'%}" class="card-img-top product-image" alt="">
 				<div class="card-body">
-					<h5 class="card-title">NIKE Lunar</h5>
-					<p class="card-text">110 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
+					<h5 class="card-title"><img class="shoe-icon" src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">NIKE Lunar</h5>
+					<p class="card-text"><strong>110 $</strong></p>
+					<a href="{% url 'apple_store'%}" class="btn btn-primary">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+						  	<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+						</svg>
+						ЗАКАЗАТЬ
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh5.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
+		<div class="col col-6">
+			<div class="card border-success h-100 mb-3">
+				<img src="{% static 'blogs/img/db/5.jpg'%}" class="card-img-top product-image" alt="">
 				<div class="card-body">
-					<h5 class="card-title">NIKE OZ-1</h5>
-					<p class="card-text">115 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
+					<h5 class="card-title"><img  class="shoe-icon" src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">NIKE OZ-1</h5>
+					<p class="card-text"><strong>115 $</strong></p>
+					<a href="{% url 'apple_store'%}" class="btn btn-primary">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+						  	<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+						</svg>
+						ЗАКАЗАТЬ
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh6.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
+		<div class="col col-6">
+			<div class="card border-success h-100 mb-3">
+				<img src="{% static 'blogs/img/db/666.jpg'%}" class="card-img-top product-image" alt="">
 				<div class="card-body">
-					<h5 class="card-title">NIKE TLX</h5>
-						<p class="card-text">120 $</p>
-						<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
-				</div>
-			</div>
-		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh7.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
-				<div class="card-body">
-					<h5 class="card-title">NIKE Lebron</h5>
-					<p class="card-text">130 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
-				</div>
-			</div>
-		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh8.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
-				<div class="card-body">
-					<h5 class="card-title">NIKE Picsart</h5>
-					<p class="card-text">140 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
-				</div>
-			</div>
-		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh9.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
-				<div class="card-body">
-					<h5 class="card-title">NIKE Basketball</h5>
-					<p class="card-text">150$.</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
-				</div>
-			</div>
-		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh10.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
-				<div class="card-body">
-					<h5 class="card-title">NIKE Winter</h5>
-					<p class="card-text">160 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
-				</div>
-			</div>
-		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh11.png'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
-				<div class="card-body">
-					<h5 class="card-title">NIKE Running</h5>
-					<p class="card-text">170 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
-
-				</div>
-			</div>
-		</div>
-		<div class="col col-6 col-md-4 col-mt-4 col-lg-3 col-rg-3">
-			<div class="card h-100 bg-success mb-3">
-				<img src="{% static 'blogs/img/db/sh12.jpg'%}" class="card-img-top" alt="" width="100" height = "250" style="object-fit: cover;">
-				<img src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">
-				<div class="card-body">
-					<h5 class="card-title">NIKE Unveils</h5>
-					<p class="card-text">180 $</p>
-					<a href="{% url 'price_no'%}" class="btn btn-primary">купить</a>
+					<h5 class="card-title"><img class="shoe-icon" src="{%static 'blogs/img/icon3.png'%}" alt="" width="32" height="32">NIKE TLX</h5>
+						<p class="card-text"><strong>120 $</strong></p>
+						<a href="{% url 'apple_store'%}" class="btn btn-primary">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+							  	<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+							</svg>
+							ЗАКАЗАТЬ
+						</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<nav aria-label="Page navigation example">
-		<ul class="pagination justify-content-rigth mt-3">
-			<li class="page-item"><a class="page-link" href="#">НАЗАД</a></li>
-			<li class="page-item"><a class="page-link" href="...">1</a></li>
-			<li class="page-item"><a class="page-link" href="...">2</a></li>
-			<li class="page-item"><a class="page-link" href="...">3</a></li>
-			<li class="page-item"><a class="page-link" href="...">4</a></li>
-			<li class="page-item"><a class="page-link" href="#">ВПЕРЕД</a></li>
+		<ul class="pagination justify-content-center mt-3">
+			<li class="page-item"><a class="page-link" href="{% url 'blogs_index'%}">НАЗАД</a></li>
+			<li class="page-item"><a class="page-link" href="{% url 'production_catalog'%}">1</a></li>
+			<li class="page-item"><a class="page-link" href="{% url 'production_buy'%}">2</a></li>
+			<li class="page-item"><a class="page-link" href="{% url 'blogs_index'%}">3</a></li>
+			<li class="page-item"><a class="page-link" href="{% url 'production_buy'%}">ВПЕРЕД</a></li>
 		</ul>
 	</nav>
+</body>
 {% endblock content %}
  
 					

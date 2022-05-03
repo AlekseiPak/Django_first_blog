@@ -34,5 +34,5 @@ def production(request):
 
     return render(request, 'blogs/production.html')
 
-def price(request):
-    return render(request, 'blogs/price.html')
+def production2(request):
+    return render(request, 'blogs/production2.html')

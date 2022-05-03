@@ -1,0 +1,8 @@
+.box{
+  background-image: url(../img/db/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:auto;
+  width: auto;
+}
